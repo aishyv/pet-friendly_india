@@ -11,6 +11,7 @@
         <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollama/3.0.4/scrollama.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.3.0/d3.min.js"></script>
+		<script src="https://kit.fontawesome.com/a63bb7c306.js" crossorigin="anonymous"></script>
         <style>
 
             body{
@@ -25,10 +26,16 @@
                 text-align: center;
             }
 
-            p{
+            p.scrolly-text{
                 font-family:'Ysabeau Office', sans-serif;
                 font-size: 20px;
                 text-align: center;    
+            }
+
+			p{
+                font-family:'Ysabeau Office', sans-serif;
+                font-size: 18px;
+                text-align: left;    
             }
 
 			p.ftext1{
@@ -150,13 +157,13 @@
         </style>
     </head>
 
+
     <body>
     <section id="introduction">
         <div>
-            <h1>Where are the pet friendly restaurants in India?</h1>
+            <h1>The quest to find India's top pet-friendly restaurant destination</h1>
             <p id="byline">by Aishwarya Viswanathan</p>
-            <img src="placeholder.gif" alt="an illustration" width="600" class="center">
-
+            <img src="pet.gif" alt="an illustration" width="600" class="center">
         </div>
     </section>
 
@@ -6088,13 +6095,13 @@
 
         <div class="scrolly-overlay">
           <div class="step" id="step-zero">
-            <p>These are all the pet-friendly restaurants in major Indian cities</p>
+            <p class="scrolly-text">These are all the pet-friendly restaurants in major Indian cities</p>
           </div>
           <div class="step" id="step-one">
-            <p>Outdoor seating is preferred by most pet parents, and there are a handful of restaurants in each city that offer this option. Kolkata offers none. </p>
+            <p class="scrolly-text">Except Kolkata, over half of the restaurants in each city offer <strong>Outdoor seating</strong></p>
           </div>
           <div class="step" id="step-two">
-            <p>If you'd like to grab a drink at a pet-friendly resto-pub, your options are non-existent in Kolkata and severely limited in Chennai. Meanwhile, Mumbai and Bangalore continue to deliver.</p>
+            <p class="scrolly-text">If you'd like to <strong>grab a drink</strong>, your options are non-existent in Kolkata and severely limited in Chennai. Mumbai and Bangalore continue to deliver.</p>
           </div>
         </div>
       </section>
@@ -6280,39 +6287,45 @@
     })();
     </script>
     <div>
-        <p>As a pet parent of a rather clingy dog, I have been grateful to the pet-friendly restaurants in my city, Bengaluru. A few other Indian cities are not far behind in this growing trend of pet-friendly establishments.  Was there a city that offered more options and variations?</p>
-    </div>
+        <p>Pet-friendly restaurants can be a godsend when your dog screams bloody murder as you shut the door on their pleading faces. As anyone who lives with a pet knows, your lifestyle becomes quickly centred around your furry friend. The plans you make -especially those that involve leaving the house - require you to exclude your pets. However, pet-friendly restaurants are trying to change this.</p>
+		<p>It is clear from the visual section above that Mumbai and Bengaluru are neck and neck in their options and varieties of pet-friendly restaurants. Bengaluru, the city I live in, is informally referred to as the ‘pet capital of India’. While I have never struggled as a pet parent in this city, I wondered if it deserved this title and thus began this project with a simple comparison of pet-friendly restaurant options across five Indian cities.</p>
+		<p>An increasing number of restaurants are capturing a rising customer base of pet parents. Like many countries, India too saw a rise in pet adoption during the Covid-19 pandemic. Estimates of a 11% growth rate of pet ownership and an addition of 3 million pets per year shows there are more Indians making the decision to bring a pet home every year.</p>
+	</div>
+	<br>
+	<div>
+		<img src = "trends.svg" alt="A line chart showing the Google search term trends for pet, dog and cat adoption." class="center" width="100%">
+	</div>
+	<br>
+	<div>
+		<p>Aside from providing access - these restaurants must also deliver on quality and affordability to be a sustainable and successful option.</p>
+		<p>To check for quality of these restaurants I looked at their ratings on the popular food on the popular restaurant aggregator, Zomato. The restaurants are rated on a scale of 1 to 5.</p>
+	</div>
+	<br>
     <div>
         <img src = "beeswarm.svg" alt="A beeswarm chart showing distribution of ratings for pet-friendly restaurants in Bangalore, Mumbai, Delhi-NCR, Kolkata and Chennai" class="center" width="100">
     </div>
 	<br>
-	<br>
 	<div>
-        <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.</p>
+        <p>With most ratings hovering around the 4.1 mark - the quality (the rating could reflect the quality of food, ambience, service, etc.) of pet-friendly restaurants could do with some improvement. Mumbai and Bengaluru continue to lead the race - particularly Mumbai with a significant number of ratings above 4.2.</p>
+		<p>Another factor in choosing to dine out is the estimated cost of your meal. In Zomato, this is listed as ‘cost for two’ and includes a meal for two excluding alcohol. </p>
     </div>
-	<div>
-        <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.</p>
-    </div>
-	<br>
 	<br>
 	<div>
         <img src = "cost-01.svg" alt="A beeswarm chart showing distribution of ratings for pet-friendly restaurants in Bangalore, Mumbai, Delhi-NCR, Kolkata and Chennai" class="center" width="100">
     </div>
+	<br>
 	<div>
-        <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.</p>
-    </div>
-	<div>
-        <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.</p>
-    </div>
+        <p>The average cost for two in all five cities is between Rs 750 to Rs 1,200 (~US$9 to US$14), a fairly afforable meal for two. On the other hand, fine-dining enthusiasts may not find any options as even the most expensive pet-friendly restaurants are far behind the fine-dining category.</p>
+		<p>Through this analysis, I have been glad to see that my city has fared well (as expected). However, if you consider number of restaurants and ratings, Mumbai is the clear winner as the country's top pet-friendly restuarant destination.</p>
+		<p>Despite the encouraging numbers, pet-friendly restaurants have a long way to go in India. Some pet-friendly restaurants do not serve pet food. Some carry limited seating for pets. And bizzarely, non-pet owners also <a href = "https://www.tribuneindia.com/news/haryana/gurugram-residents-seek-norms-for-pet-friendly-restaurants-465396">complain</a> about having to share their space with pets in pet-friendly restaurants. These are not overnight fixes.However, responsible pet-friendly restuarant owners can begin with small measures to ensure a safe space for their customers to dine with pets.</p>
 
-	<div class="footer">
+    </div>
+<br>
 		<div>
-		  <p class="ftext1">Sources</p>
-		  <p class="footer-text">1. <a href="https://www.magicbricks.com/blog/property-rates-in-bangalore/130414.html">Property Market of Bangalore in Q3(2022),</a> a report from Magic Bricks</p>
-		  <p class="footer-text">2. <a href="https://data.opencity.in/dataset/bbmp-ward-wise-public-goods-data">BBMP's public goods dataset,</a> from Opencity,an urban data portal</p>
-		  <p class="footer-text"><a href="https://github.com/aishyv/parks_and_property/tree/main">Link to Github repo</a></p>
+			<a href="https://github.com/aishyv/pet-friendly_india"><i class="fa-brands fa-github fa-2xl"></i></a>
 		</div>
-	  </div>
-
+	 
+		<br>
+		<br>
     </body>
 </html>
